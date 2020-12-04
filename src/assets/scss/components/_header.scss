@@ -1,0 +1,43 @@
+.hero-banner {
+  background-image: url("http://via.placeholder.com/1920x650");
+  height: 400px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
+  position: relative;
+
+  @media screen and (min-width: 768px) {
+    height: 650px;
+  }
+
+  .hero-content {
+    z-index: 10;
+    h1 {
+      font-size: 57px;
+      color: #ffffff;
+      @media screen and (min-width: 768px) {
+        font-size: 87px;
+      }
+    }
+    p {
+      font-size: 28px;
+      color: #ffffff;
+      @media screen and (min-width: 768px) {
+        font-size: 40px;
+      }
+    }
+  }
+
+  &:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+  }
+}
